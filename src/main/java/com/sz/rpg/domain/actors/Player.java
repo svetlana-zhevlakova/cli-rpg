@@ -1,12 +1,14 @@
 package com.sz.rpg.domain.actors;
 
-import com.sz.rpg.domain.features.Feature;
-
-import java.util.List;
-
 public class Player extends Actor {
 
-    private String name;
-    private List<Feature> featureList;
+    private double experience;
 
+    public double getExperience() {
+        return experience;
+    }
+
+    public void setExperience(double experience) {
+        this.experience = experience;
+    }
 }

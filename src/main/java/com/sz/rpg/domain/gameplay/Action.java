@@ -6,6 +6,7 @@ public class Action {
 
     private UUID actionUuid;
     private ActionType actionType;
+    private Long botId;
 
     public UUID getActionUuid() {
         return actionUuid;
@@ -21,5 +22,13 @@ public class Action {
 
     public void setActionType(ActionType actionType) {
         this.actionType = actionType;
+    }
+
+    public Long getBotId() {
+        return botId;
+    }
+
+    public void setBotId(Long botId) {
+        this.botId = botId;
     }
 }

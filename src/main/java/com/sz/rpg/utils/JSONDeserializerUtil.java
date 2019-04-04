@@ -1,11 +1,14 @@
 package com.sz.rpg.utils;
 
+import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sz.rpg.domain.gameplay.Game;
+import jdk.internal.org.objectweb.asm.TypeReference;
 import org.apache.log4j.Logger;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Map;
 
 public final class JSONDeserializerUtil {
 
@@ -14,14 +17,25 @@ public final class JSONDeserializerUtil {
     private JSONDeserializerUtil() {
     }
 
-    public static Game deserialize(InputStream payload) {
+    public static <T> T  deserialize(InputStream inputStream, Class<T> clazz) {
         ObjectMapper objectMapper = new ObjectMapper();
         try {
-            return objectMapper.readValue(payload, Game.class);
+            return objectMapper.readValue(inputStream, clazz);
         } catch (IOException e) {
-            LOGGER.error("Cannot deserialize payload", e);
+            LOGGER.error("Cannot deserialize inputStream", e);
             return null;
         }
 
+    }
+
+    public static <K, V> Map<K,V> deserializeMap (InputStream inputStream, Class<K> keyClazz, Class<V> valueClazz){
+        ObjectMapper objectMapper = new ObjectMapper();
+        JavaType type = objectMapper.getTypeFactory().constructMapType(Map.class, keyClazz, valueClazz);
+        try {
+            return objectMapper.readValue(inputStream, type);
+        } catch (IOException e) {
+            LOGGER.error("Cannot deserialize inputStream", e);
+            return null;
+        }
     }
 }

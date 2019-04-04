@@ -1,0 +1,124 @@
+{
+	"title": "Title of the game",
+	"playGrid": [
+	],
+	"players": [{
+			"id": 1,
+			"name": "player_1_name",
+			"description": "description who is this player",
+			"party": "PARTY_A",
+			"experience": 0,
+			"availableFeatures": [{
+					"name": "Guns",
+					"featureType": "WEAPON"
+				}, {
+					"name": "accuracy",
+					"featureType": "ATTRIBUTE",
+					"level": "70"
+				}
+			]
+
+		}, {
+			"id": 2,
+			"name": "player_2_name",
+			"description": "description who is this player",
+			"party": "PARTY_B",
+			"experience": 0,
+			"availableFeatures": [{
+					"name": "Guns",
+					"featureType": "WEAPON"
+				}, {
+					"name": "accuracy",
+					"featureType": "ATTRIBUTE",
+					"level": "50"
+				}
+			]
+		}
+	],
+	"bots": [{
+			"id": 1,
+			"name": "bot_1_name",
+			"description": "description who is this character",
+			"party": "PARTY_A",
+			"availableFeatures": [{
+					"name": "Guns",
+					"featureType": "WEAPON"
+				}, {
+					"name": "accuracy",
+					"featureType": "ATTRIBUTE",
+					"level": "70"
+				}
+			]
+		}, {
+			"id": 2,
+			"name": "bot_2_name",
+			"description": "description who is this character",
+			"party": "PARTY_A",
+			"availableFeatures": [{
+					"name": "Guns",
+					"featureType": "WEAPON"
+				}, {
+					"name": "speed running",
+					"featureType": "ATTRIBUTE",
+					"level": "50"
+				}
+			]
+		}, {
+			"id": 3,
+			"name": "bot_3_name",
+			"description": "description who is this character",
+			"party": "PARTY_B",
+			"availableFeatures": [{
+					"name": "Guns",
+					"featureType": "WEAPON"
+				}, {
+					"name": "accuracy",
+					"featureType": "ATTRIBUTE",
+					"level": "70"
+				}
+			]
+		}, {
+			"id": 4,
+			"name": "bot_4_name",
+			"description": "description who is this character",
+			"party": "PARTY_B",
+			"availableFeatures": [{
+					"name": "Guns",
+					"featureType": "WEAPON"
+				}, {
+					"name": "speed running",
+					"featureType": "ATTRIBUTE",
+					"level": "50"
+				}
+			]
+		}, {
+			"id": 5,
+			"name": "bot_5_name",
+			"description": "description who is this character",
+			"party": "PARTY_C",
+			"availableFeatures": [{
+					"name": "Guns",
+					"featureType": "WEAPON"
+				}, {
+					"name": "speed running",
+					"featureType": "ATTRIBUTE",
+					"level": "50"
+				}
+			]
+		}
+	],
+	"actions": [{
+			"actionUuid": "64f6ee7a-54b0-11e9-8647-d663bd873d93",
+			"botId": "1"
+		}, {
+			"actionUuid": "705de7f0-54b0-11e9-8647-d663bd873d93",
+			"botId": "2"
+		}, {
+			"actionUuid": "e673e98c-55bc-11e9-8647-d663bd873d93",
+			"botId": "3"
+		}, {
+			"actionUuid": "f2d82846-55bc-11e9-8647-d663bd873d93",
+			"botId": "4"
+		}
+	]
+}

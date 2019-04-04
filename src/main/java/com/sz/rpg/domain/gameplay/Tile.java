@@ -1,4 +1,4 @@
-package com.sz.rpg.gameplay;
+package com.sz.rpg.domain.gameplay;
 
 /**
  * F class for representing one cell of the play map

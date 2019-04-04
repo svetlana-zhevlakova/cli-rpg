@@ -32,4 +32,13 @@ public class Feature {
     public void setLevel(int level) {
         this.level = level;
     }
+
+    @Override
+    public String toString() {
+        return "Feature{" +
+                "featureType=" + featureType +
+                ", name='" + name + '\'' +
+                ", level=" + level +
+                '}';
+    }
 }
