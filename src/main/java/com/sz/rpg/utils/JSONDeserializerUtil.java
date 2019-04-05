@@ -2,8 +2,6 @@ package com.sz.rpg.utils;
 
 import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.sz.rpg.domain.gameplay.Game;
-import jdk.internal.org.objectweb.asm.TypeReference;
 import org.apache.log4j.Logger;
 
 import java.io.IOException;

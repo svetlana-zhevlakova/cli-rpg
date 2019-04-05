@@ -11,4 +11,8 @@ public class Player extends Actor {
     public void setExperience(double experience) {
         this.experience = experience;
     }
+
+    public void updateExperience(double extraExperience){
+        experience = experience + extraExperience;
+    }
 }

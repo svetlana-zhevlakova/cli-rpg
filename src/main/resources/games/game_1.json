@@ -10,11 +10,17 @@
 			"experience": 0,
 			"availableFeatures": [{
 					"name": "Guns",
-					"featureType": "WEAPON"
+					"featureType": "WEAPON",
+					"level": "10"
 				}, {
 					"name": "accuracy",
 					"featureType": "ATTRIBUTE",
 					"level": "70"
+				},
+				{
+					"name": "speed running",
+					"featureType": "ATTRIBUTE",
+					"level": "50"
 				}
 			]
 
@@ -60,7 +66,7 @@
 				}, {
 					"name": "speed running",
 					"featureType": "ATTRIBUTE",
-					"level": "50"
+					"level": "40"
 				}
 			]
 		}, {
@@ -74,7 +80,7 @@
 				}, {
 					"name": "accuracy",
 					"featureType": "ATTRIBUTE",
-					"level": "70"
+					"level": "80"
 				}
 			]
 		}, {
@@ -88,7 +94,7 @@
 				}, {
 					"name": "speed running",
 					"featureType": "ATTRIBUTE",
-					"level": "50"
+					"level": "10"
 				}
 			]
 		}, {
@@ -102,7 +108,7 @@
 				}, {
 					"name": "speed running",
 					"featureType": "ATTRIBUTE",
-					"level": "50"
+					"level": "30"
 				}
 			]
 		}
